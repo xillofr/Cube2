@@ -1,0 +1,11 @@
+1-ajout de plage de temps pour meilleur utilisation de l'attribut time
+2-ajout de favoris sur le panel client
+3-login sur le panel client ? intéret si local ? juste un mdp global genre nom machine ou autre parametre récupérable ?
+4-personnalisation des graphs pour l'utilisateur
+5-graphique par sonde/zone ?
+6-comment gérer plusieurs sondes pour le graph ?
+7-gérer le timset de l'API pour edit la frequence des mesures ?
+8-comment est gérer le stockage sur la base pour éviter la surcharge ?
+9-limite pour le graph /all -> avertissement utilisateur ou limite programme ?
+10-autorefresh des graphs ?
+11-sécuriser les scripts pour les infos db par exemple -> sortir les script dans un .js non accessible en web ?
