@@ -1,6 +1,13 @@
 # Cube2
 
+TO DO : 
 
+FRONTPAGE : -TopBar
+            -LeftBar
+            -page accueil (date/temp/humidite actuelle + image correspondant)
+            -page sonde
+            -page log ?
+            -retouche du style pour personaliser un peu
 
 https://cubedeux.atlassian.net/jira/software/projects/CUB/boards/1
 
