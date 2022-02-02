@@ -375,8 +375,8 @@
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                           <a class="dropdown-item" onclick="refreshButton(5)">5 dernières</a>
-                          <a class="dropdown-item" onclick="refreshButton(15)">15 dernières</a>
-                          <a class="dropdown-item" onclick="refreshButton(100)">100 dernières</a>
+                          <a class="dropdown-item" onclick="refreshButton(3)">15 dernières</a>
+                          <a class="dropdown-item" onclick="refreshButton(2)">100 dernières</a>
                         </div>
                       </div>
                 
@@ -395,9 +395,28 @@
                 function DisplayChart(){
                     $(function(){
                        // console.log(lastnombre+"est mon lastnombre");
-                      $("#chart").load("/cube2/ressource/chartjs.html"); 
+                      $("#chart").load("/cube2/ressource/chartjs2.html"); 
                     });      
                 }
+                function DisplayChart2(){
+                    $(function(){
+                       // console.log(lastnombre+"est mon lastnombre");
+                      $("#chart").load("/cube2/ressource/chartjs2.html"); 
+                    });      
+                }
+
+
+                //document.write(test);
+                /*  if (test == "1") {
+    document.write(test);
+  } else {
+    console.log("ça fonctionne");  
+    function DisplayChart(){
+                    $(function(){
+                      $("#chart").load("/cube2/ressource/chartjs2.html"); 
+                    });      
+                }
+            } */
                 </script>
                     <!-- /.container-fluid -->
 
