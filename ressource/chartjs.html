@@ -1,0 +1,66 @@
+<!DOCTYPE.html>
+<html>
+    <head>
+         
+        <meta charset="utf-8">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js" integrity="sha512-TW5s0IT/IppJtu76UbysrBH9Hy/5X41OTAbQuffZFU6lQ1rdcLHzpU5BzVvr/YFykoiMYZVWlr/PX1mDcfM9Qg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+    <body>
+<h1><?php echo "Hello World" ?></h1>
+       <script>console.log("testduchart");</script>
+        <div>
+            <canvas id="myChart"></canvas>
+          </div>
+          
+          
+          <script>
+            
+  
+
+          const labels = [
+            'January',
+            'February',
+            'March',
+            'April',
+            'May',
+            'June',
+          ];
+        
+          const data = {
+            labels: labels,
+            datasets: [
+              {
+              label: "temperature",
+              backgroundColor: 'rgb(255, 99, 132)',
+              borderColor: 'rgb(255, 99, 132)',
+              data: [0, 10, 5, 2, 20, 30, 45],
+              },
+              {
+              label: 'Humidité',
+              backgroundColor: 'rgb(255, 99, 132)',
+              borderColor: 'rgb(255, 255, 132)',
+              data: [20, 15, 15, 22, 33, 4, 12],
+              }
+          ]
+          };
+        
+          const config = {
+            type: 'line',
+            data: data,
+            options: {}
+          };
+
+          const ctx = document.getElementById('myChart').getContext('2d'); 
+          const myChart = new Chart(ctx,config);
+        </script>
+         
+         
+         
+          
+         
+    </body>
+</html>
+
+
+    

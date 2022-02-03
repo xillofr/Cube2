@@ -9,3 +9,7 @@
 9-limite pour le graph /all -> avertissement utilisateur ou limite programme ?
 10-autorefresh des graphs ?
 11-sécuriser les scripts pour les infos db par exemple -> sortir les script dans un .js non accessible en web ?
+12-ajouter une icone pour le temps actuel dans le popup du profil
+13-ajouter la carte des sondes
+14-ajouter le partage via librairie JS ? via bouton qui renvoie un graph avec le partage ?
+15-ajouter sur le ppt : cahier des charges : fait -> comment / pas fait -> pq ?

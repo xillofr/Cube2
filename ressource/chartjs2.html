@@ -1,0 +1,94 @@
+<!DOCTYPE.html>
+<html>
+    <head>
+         
+        <meta charset="utf-8">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js" integrity="sha512-TW5s0IT/IppJtu76UbysrBH9Hy/5X41OTAbQuffZFU6lQ1rdcLHzpU5BzVvr/YFykoiMYZVWlr/PX1mDcfM9Qg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+    <body>
+
+       
+        <div style="position: relative;
+        margin: auto;
+        ">
+            <canvas id="myChart"></canvas>
+          </div>
+
+          
+          
+          <script> 
+
+          //var lastnombre = 2; 
+          var valeurtest = lastnombre;
+          $.getJSON('../ressource/data.php?lastnombre='+lastnombre, function (valeurs) {  
+              
+
+            
+  
+// On récupère les heures de nos entrées et on les stock pour l'axe
+          const labels = [];
+          for (let i = 0; i < valeurs.length; i++) {
+
+            labels.push (valeurs[i].time);
+}
+
+// On récupère les datas de nos entrées
+//humidite
+const humidite = [];
+          for (let i = 0; i < valeurs.length; i++) {
+
+            humidite.push (valeurs[i].humidite);
+}
+//temperature
+const temperature = [];
+          for (let i = 0; i < valeurs.length; i++) {
+
+            temperature.push (valeurs[i].temperature);
+}
+
+
+// On defini les constantes/options de notre graphique
+          const data = {
+            labels: labels,
+            datasets: [
+              {
+              label: 'Température',
+              backgroundColor: 'rgb(255, 99, 132)',
+              borderColor: 'rgb(255, 99, 132)',
+              data: temperature,
+              },
+              {
+              label: 'Humidité',
+              backgroundColor: 'rgb(255, 255, 132)',
+              borderColor: 'rgb(255, 255, 132)',
+              data: humidite,
+              }
+          ]
+          };
+        
+          const config = {
+            type: 'line',
+            data: data,
+            options: {}
+          };
+
+          const ctx = document.getElementById('myChart').getContext('2d'); 
+          const myChart = new Chart(ctx,config);
+         // var a = document.createElement('a');
+         // a.href = myChart.toBase64Image();
+         // a.download = 'my_file_name.png';
+          //a.click();
+         
+    
+                 });
+         
+        </script>
+         
+          
+         
+    </body>
+</html>
+
+
+    

@@ -1,0 +1,12 @@
+A FAIRE ABSOLUMENT :
+
+1-Vérifier que la connexion en wifi est possible sur l'apache du RASP
+2-Changer le varchar du password pour le hash en md5
+3-vérifier toutes les dépendances (locale car pas de co wifi ?)
+4-vérifier que le script pour les températures fonctionne (les rentrer en base)
+4-faire le ppt(screen tout beau etc..)
+5-push tout sur la rasp ATTENTION les fichiers en LF & les droits un peu partout !!!!
+6-push sur le git avant de screen
+7-edit le jira avant de screen
+8-photo du login ?
+9-faire les bonus si le temps est la ?
